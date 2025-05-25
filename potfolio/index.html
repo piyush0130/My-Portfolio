@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Nanda | Cybersecurity Expert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.4/dist/gsap.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">PN</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="menu-btn">
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Hi, I'm <span class="highlight">Piyush Nanda</span></h1>
+                <h2 class="fade-in">Cybersecurity Expert</h2>
+                <p class="fade-in">Protecting digital assets and securing the future of technology.</p>
+                <div class="cta-buttons fade-in">
+                    <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-3d-container">
+                <canvas id="hero-3d"></canvas>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <img src="images/profile.jpg" alt="Piyush Nanda">
+                        </div>
+                        <div class="pattern-bg"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I am a passionate cybersecurity expert with extensive experience in protecting digital infrastructures and sensitive data from cyber threats. My expertise spans across vulnerability assessment, penetration testing, security architecture, and incident response.</p>
+                    
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">Network Security</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Penetration Testing</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Cryptography</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Security Architecture</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Incident Response</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-cv">
+                        <a href="#" class="btn primary-btn">Download CV <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="highlight">Services</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Vulnerability Assessment</h3>
+                    <p>Comprehensive scanning and evaluation of systems to identify security vulnerabilities before they can be exploited.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Authorized simulated attacks on your systems to identify and fix security weaknesses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security Architecture</h3>
+                    <p>Design and implementation of robust security frameworks tailored to your organization's needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Secure Code Review</h3>
+                    <p>Analysis of application source code to identify security flaws and ensure secure coding practices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <h3>Incident Response</h3>
+                    <p>Swift and effective response to security breaches to minimize damage and restore security.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Security Training</h3>
+                    <p>Educational programs to train your staff on cybersecurity awareness and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="highlight">Projects</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="audit">Audit</button>
+                <button class="filter-btn" data-filter="consulting">Consulting</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="security">
+                    <div class="project-img">
+                        <img src="images/Financial Security System.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Financial Security System</h3>
+                        <p>Implementation of a comprehensive security system for a major financial institution.</p>
+                        <div class="project-tech">
+                            <span>Network Security</span>
+                            <span>Encryption</span>
+                            <span>Firewall</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/financial-security-system.html" class="btn small-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="audit">
+                    <div class="project-img">
+                        <img src="images/Healthcare Vulnerability Audit.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare Vulnerability Audit</h3>
+                        <p>Security assessment and vulnerability management for a healthcare provider network.</p>
+                        <div class="project-tech">
+                            <span>HIPAA</span>
+                            <span>Penetration Testing</span>
+                            <span>Risk Assessment</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/healthcare-vulnerability-audit.html" class="btn small-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="consulting">
+                    <div class="project-img">
+                        <img src="images/Government Security Consulting.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Government Security Consulting</h3>
+                        <p>Strategic security consulting for a government agency's digital transformation.</p>
+                        <div class="project-tech">
+                            <span>Zero Trust</span>
+                            <span>Architecture</span>
+                            <span>Compliance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/government-security-consulting.html" class="btn small-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="security">
+                    <div class="project-img">
+                        <img src="images/Financial Security System.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Security Solution</h3>
+                        <p>End-to-end security implementation for a high-traffic e-commerce platform.</p>
+                        <div class="project-tech">
+                            <span>Payment Security</span>
+                            <span>Data Protection</span>
+                            <span>Fraud Prevention</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/ecommerce-security-solution.html" class="btn small-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Email</h3>
+                            <p>nandapiyush9@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Phone</h3>
+                            <p>+91 9340 9067 20</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Location</h3>
+                            <p>MANDLA , MP, INDIA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Submissions Section -->
+    <section id="contact-submissions" class="contact-submissions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact <span class="highlight">Submissions</span></h2>
+                <div class="header-bar"></div>
+            </div>
+            <div id="contact-submissions" class="submissions-container">
+                <!-- Submissions will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PN</div>
+                <p>© 2023 Piyush Nanda. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
